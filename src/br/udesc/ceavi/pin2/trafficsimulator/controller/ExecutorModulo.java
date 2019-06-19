@@ -34,7 +34,9 @@ public class ExecutorModulo implements ExecutorModuloInterface {
 		if(classePrincipal.trim().length() == 0) {
 			throw new ConfiguracaoIncorretaException("Classe principal não definida.", modulo);
 		}
-		return (Runnable) Class.forName(classePrincipal).getDeclaredConstructor().newInstance();
+		Runnable instancia = (Runnable) Class.forName(classePrincipal).getDeclaredConstructor().newInstance();
+		modulos.put(modulo.getId(), instancia);
+		return instancia;
 	}
 
 }
