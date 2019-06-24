@@ -18,7 +18,7 @@
 		{
 			"id"				: 4,
 			"nome"				: "Simula\u00e7\u00e3o Microsc\u00f3pica",
-			"classePrincipal"               : ""
+			"classePrincipal"               : "br.udesc.ceavi.pin2.Executor"
 		}
 	]
 }
