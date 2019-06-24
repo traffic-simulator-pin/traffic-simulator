@@ -32,7 +32,7 @@ public class ExecutorModulo implements ExecutorModuloInterface {
 	private Runnable criarInstanciaModulo(ModuloSistema modulo) throws Exception {
 		String classePrincipal = modulo.getClassePrincipal();
 		if(classePrincipal.trim().length() == 0) {
-			throw new ConfiguracaoIncorretaException("Classe principal não definida.", modulo);
+			throw new ConfiguracaoIncorretaException("Classe principal n\u00e3o definida.", modulo);
 		}
 		Runnable instancia = (Runnable) Class.forName(classePrincipal).getDeclaredConstructor().newInstance();
 		modulos.put(modulo.getId(), instancia);
