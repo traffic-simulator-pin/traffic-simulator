@@ -19,11 +19,10 @@ public class TratamentoExcecao {
 
 	public void tratar(Exception ex) {
 		JOptionPane.showMessageDialog(null, getMensagemErro(ex), getTituloErro(ex), JOptionPane.ERROR_MESSAGE);
-		ex.printStackTrace();
 	}
 
 	private String getMensagemErro(Exception ex) {
-		return "Erro ao realizar operação: " + ex.getMessage();
+		return "Erro ao realizar opera\u00e7\u00e3o: " + ex.getMessage();
 	}
 
 	private String getTituloErro(Exception ex) {

@@ -8,11 +8,11 @@ public class ConfiguracaoIncorretaException extends Exception {
 	private ModuloSistema modulo;
 
 	public ConfiguracaoIncorretaException() {
-		this("Problema na configuração do módulo.", null);
+		this("Problema na configura\u00e7\u00e3o do m\u00f3dulo.", null);
 	}
 
 	public ConfiguracaoIncorretaException(ModuloSistema modulo) {
-		this("Problema na configuração do módulo " + modulo.getNome() + ".", modulo);
+		this("Problema na configura\u00e7\u00e3o do m\u00f3dulo " + modulo.getNome() + ".", modulo);
 	}
 
 	public ConfiguracaoIncorretaException(String mensagem, ModuloSistema modulo) {
@@ -23,7 +23,7 @@ public class ConfiguracaoIncorretaException extends Exception {
 	@Override
 	public String getMessage() {
 		return super.getMessage() + "\n"
-			 + "Módulo: " + modulo.getNome();
+			 + "M\u00f3dulo: " + modulo.getNome();
 	}
 
 }
