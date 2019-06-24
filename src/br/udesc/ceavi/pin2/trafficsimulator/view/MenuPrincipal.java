@@ -8,6 +8,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 import br.udesc.ceavi.pin2.trafficsimulator.controller.ControllerPrincipalInterface;
+import br.udesc.ceavi.pin2.trafficsimulator.view.listener.AbrirModuloActionListener;
 
 public class MenuPrincipal extends JMenuBar {
 
@@ -34,16 +35,7 @@ public class MenuPrincipal extends JMenuBar {
 
 	private JMenuItem criarItemModulo(Integer id) {
 		JMenuItem item = new JMenuItem(controller.getNomeModulo(id));
-		item.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					controller.abrirModulo(id);
-				} catch(Exception ex) {
-					TratamentoExcecao.getInstance().tratar(ex);
-				}		
-			}
-		});
+		item.addActionListener(new AbrirModuloActionListener(id));
 		return item;
 	}
 

@@ -10,6 +10,7 @@ public class FramePrincipal extends JFrame {
 	
 	public FramePrincipal(ControllerPrincipalInterface controller) {
 		setJMenuBar(new MenuPrincipal(controller));
+		setContentPane(new PanelPrincipal(controller));
 		setSize(800, 600);
 		setTitle(controller.getTitulo());
 		setLocationRelativeTo(null);
