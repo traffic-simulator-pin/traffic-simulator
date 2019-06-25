@@ -8,12 +8,12 @@
 		{
 			"id"				: 2,
 			"nome"				: "Importa\u00e7\u00e3o da Rede",
-			"classePrincipal"   : ""
+			"classePrincipal"   : "modulo2.view.main"
 		},
 		{
 			"id"				: 3,
 			"nome"				: "Simula\u00e7\u00e3o Macrosc\u00f3pica",
-			"classePrincipal"   : ""
+			"classePrincipal"   : "br.udesc.pinii.macro.view.Main"
 		},
 		{
 			"id"				: 4,
